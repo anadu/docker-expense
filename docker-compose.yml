@@ -1,5 +1,5 @@
 networks:
-  expense :{}
+  expense: {}
 volumes:
   mysql:
 services:
