@@ -11,6 +11,7 @@ RUN addgroup --system expense && adduser --system --ingroup expense expense && \
 WORKDIR /app    
 ENV DB_HOST="mysql" 
 COPY --from=builder /app  /app
+USER expense
 CMD ["node", "index.js"]
 
                           
