@@ -1,4 +1,4 @@
 FROM node:20
-RUN addgroup -S expense && adduser -S expense -G expense
+RUN addgroup --system expense && adduser --system --ingroup expense expense
     
 
