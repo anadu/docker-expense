@@ -13,6 +13,7 @@ ENV DB_HOST="mysql"
 COPY --from=builder /app  /app
 USER expense
 CMD ["node", "index.js"]
+#application logic
 
                           
 
